@@ -1,0 +1,45 @@
+Note: Installation process can be varry as per enviroment, if you faced any issue kindly check proper steps required.
+
+1)Environment Setup
+
+Purpose: To keep project dependencies isolated and avoid version conflicts.
+
+Commands:
+
+python -m venv venv (Create)
+
+source venv/bin/activate (Mac/Linux) or .\venv\Scripts\activate (Windows)
+
+2)Django Installation
+
+Command: pip install django
+
+Verification: python -m django --version
+
+3)Project vs. App
+
+Project: The overall website configuration and collection of settings.
+
+django-admin startproject config . (The dot keeps the directory structure flat).
+
+App: A specific sub-module or feature within the project.
+
+python manage.py startapp main
+
+4)Database & Server
+
+Migrate: Sets up default database tables for users and sessions.
+
+python manage.py migrate
+
+Run Server: Starts the local development environment.
+
+python manage.py runserver
+
+Access: View the site at http://127.0.0.1:8000/
+
+5)Best Practices for GitHub
+
+.gitignore: Crucial to exclude venv/, __pycache__/, and db.sqlite3 from your commits.
+
+Dependencies: Document your setup for others using pip freeze > requirements.txt.
