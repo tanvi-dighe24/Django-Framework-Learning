@@ -1,0 +1,31 @@
+What does really FRAMEWORK mean??
+
+let me explain in simple way:
+
+-Set of conceptual structure and guidelines used to build something useful.
+-Softwares that are developed to build applications.
+-Collection of tools designed to help to create your project so you do not need to start from scratch.
+
+#Framework: May include predefined classes, funtions that can be used to process input, manage hardware devices, interact with system architecture.
+
+-Purpose: Allow Developers to focus on business logic and features of their applicaation rather than writing codes from scratch.
+
+#Why to USE FRAMEWORKK?
+-NO NEED to write code from scratch
+-Saves time
+-Inbuilt security features
+-Testing and Debugging is easy
+-Different sections for different tasks
+-Clean Code
+-Lot of Inbuilt Tools.
+
+#Examples Of Framework:
+-DJango:  Free & Open Source Web App Framework of PYTHON.
+
+-Angular: Open Source JS Framework.
+          Used for building web applications.
+
+-Laravel:PHP based web application framework.
+
+
+
