@@ -1,5 +1,7 @@
 💻Django Documentation By Tanvee Dighe
 
+I am updating all possible Django information from scrash to pick, stay tuned!
+
 
 #Django is a high-level, open-source Python web framework that enables rapid development of secure and scalable web applications. It handles much of the routine hassle of web development, so developers can focus on unique application features. 
 Core Principles and Features
