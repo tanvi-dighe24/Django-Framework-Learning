@@ -1,0 +1,60 @@
+📊 Django : Models & Databases
+1. What is a Model?
+A Model is a Python class that defines the structure of your data. It acts as the Single Source of Truth for your information.
+
+Location: myapp/models.py
+
+OR Mapper: Django uses an ORM (Object-Relational Mapper) so you can interact with the database using Python code instead of SQL queries.
+
+2. Creating Your First Model
+Here is a general example of a Task model.
+
+Python
+from django.db import models
+
+class Task(models.Model):
+    title = models.CharField(max_length=200)  # Text input
+    description = models.TextField()           # Large text area
+    is_completed = models.BooleanField(default=False)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.title
+
+3. The Migration Workflow
+Whenever you change models.py, you must follow these two steps to update the database:
+
+Make Migrations: Scans your models and creates a "plan" for the change.
+
+Bash
+python manage.py makemigrations
+Migrate: Executes the plan and actually updates the database.
+
+Bash
+python manage.py migrate
+4. The Django Admin (The "Magic" Part)
+Django provides a built-in interface to manage your data immediately.
+
+Register the model in myapp/admin.py:
+
+Python
+from django.contrib import admin
+from .models import Task
+
+admin.site.register(Task)
+Create a Superuser (Admin account):
+
+Bash
+python manage.py createsuperuser
+Login: Go to http://127.0.0.1:8000/admin to see your database table.
+
+5. Summary Checklist for Students
+[ ] Define class in models.py.
+
+[ ] Run makemigrations.
+
+[ ] Run migrate.
+
+[ ] Register in admin.py.
+
+[ ] Verify in the Admin Panel.
