@@ -16,7 +16,7 @@ Django is known for its "batteries-included" philosophy and adherence to the "Do
 -URL Routing: A clean and elegant system for mapping URLs to specific Python functions (views).
 -Templating Engine: A powerful template system that separates the front-end (HTML/CSS) from the back-end logic, allowing for dynamic content generation. 
 
-#Architecture (MVT Pattern)
+#Architecture (MVT Pattern):
 Django follows the Model-View-Template (MVT) architectural pattern, which is similar to the more widely known Model-View-Controller (MVC) pattern. 
 1)Model: Defines the data structure and interacts with the database.
 2)View: Contains the business logic, processes the request using models, and decides what data to send to the template.
