@@ -1,4 +1,4 @@
-💻Django Documentation By Tanvee Dighe
+💻Django Documentation By Tanvee :
 
 I am updating all possible Django information from scrash to pick, stay tuned!
 
